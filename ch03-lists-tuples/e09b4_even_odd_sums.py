@@ -4,16 +4,16 @@
 
 def even_odd_sums(numbers):
     """Takes a list of numbers, and returns a two-element
-list containing the sum of the even elements and the
-sum of the odd elements.
+list containing the sum of the even-indexed elements and the
+sum of the odd-indexed elements.
 """
     evens = []
     odds = []
 
-    for one_number in numbers:
-        if one_number % 2:
-            odds.append(one_number)
+    for idx in range(len(input_list)):
+        if idx % 2:
+            evens.append(input_list[idx])
         else:
-            evens.append(one_number)
+            odds.append(input_list[idx])
 
     return [sum(evens), sum(odds)]
